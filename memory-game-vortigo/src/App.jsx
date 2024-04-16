@@ -7,6 +7,7 @@ import { MemoryGamePage } from "./components/Pages/MemoryGamePage/MemoryGamePage
 import { MemoryGameplay } from "./components/Pages/MemoryGameplayPage/MemoryGameplay";
 
 function App() {
+  const [numberCards, setNumberCards] = useState(2)
   const [pagePath, setPagePath] = useState(1);
   const [username, setUsername] = useState('') // recebe o username para o componente filho memory
 
@@ -21,10 +22,13 @@ function App() {
         <Route
           path="/memorygame"
           element={<MemoryGamePage 
+            setNumberCards={setNumberCards}
             updatePagePath={setPagePath}
             username={username}/>}
         />
-        <Route path='/memorygameplay' element={<MemoryGameplay/>}/>
+        <Route path='/memorygameplay' element={<MemoryGameplay
+          numberCards={numberCards}
+        />}/>
       </Routes>
       <SwitchPages updatePagePath={pagePath} />
     </BrowserRouter>
