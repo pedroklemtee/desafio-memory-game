@@ -6,7 +6,7 @@ export const useMemoryGameplay = (gameMode) => {
     useEffect(() => {
         switch (gameMode) {
             case 150:
-                setTimeLeft(150);
+                setTimeLeft(10);
                 break;
             case 300:
                 setTimeLeft(300);
