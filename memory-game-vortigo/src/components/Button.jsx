@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ButtonStyled = styled.button`
-    margin: 10px;
+    margin: 3px;
     padding: 11px 22px;
     text-align: center;
     text-transform: uppercase;
@@ -18,6 +18,11 @@ const ButtonStyled = styled.button`
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+
+
+  @media(max-width: 768px){
+    padding: 9px 13px;
+  }
 
     &:hover {
         background-position: right center;

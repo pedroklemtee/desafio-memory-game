@@ -3,3 +3,44 @@
     height: 300px;
     width: auto;
 }
+
+.card .front-image {
+    transform: rotateY(90deg);
+    position: absolute;
+    transition: all ease-in 0.2s;
+}
+
+.flipped .front-image{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.card .back-image{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back-image{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .card .found .front-image {
+    opacity: 0.6; 
+    animation: pulse 1.0s ease-in-out; 
+  }
+  
+  
+

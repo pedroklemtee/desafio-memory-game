@@ -24,6 +24,11 @@ export const PageForm = styled.form`
   padding: 35px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.829);
 
+  @media(max-width: 768px){
+    width: 250px;
+    height: 400px;
+  }
+
   input {
     padding: 5px;
     font-size: 16px;
@@ -43,6 +48,10 @@ export const PageForm = styled.form`
 
   img {
     height: 200px;
+
+  @media(max-width: 768px){
+    height: 150px;
+  }
   }
 
   div {

@@ -32,6 +32,10 @@ export const CustomSelect = styled.select`
   outline: none;
   box-shadow: 3px 3px 2px 0px #E2E2E2;
 
+  @media(max-width: 768px){
+    font-size: 12px;
+  }
+
   &:focus {
     background: #F2F2F2;
     border: 2px dashed #F7FF0E;
@@ -62,16 +66,27 @@ export const MemoryContainer = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 400px;
+  height: 500px;
   width: 350px;
   flex-direction: column;
   padding: 80px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.829);
 
+
+  @media(max-width: 768px){
+    width: 220px;
+    height: 400px;
+    font-size: 11px;
+  }
+
   img{
     height: 170px;
     margin: 0;
     padding: 0;
+
+  @media(max-width: 768px){
+    height: 120px;
+  }
   }
 
   div {
